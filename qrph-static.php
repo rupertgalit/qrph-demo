@@ -164,9 +164,15 @@
                           console.log(ref);                                                   
                        
                           var qrcode = new QRCode(document.getElementById("qrcode"), {
+                            // ###old###
                           // text: "0020101021228690011ph.ppmi.p2m0111TAYOPHM2XXX0312P2M0000000130412P2M0000000130503010520460165303608540510.005802PH5909AquaFlask6015CABANATUAN CITY62450011ph.tayocash0309AquaFlask05062110000803***80590011ph.ppmi.p2m0124aquaflaskconst@gmail.com021263906100000288300012ph.ppmi.qrph0110TC3582282563042297",                    
-                          
-                          text:qr,
+                            // ###new fix amount####
+                          text: "00020101021228780011ph.ppmi.p2m0111RUGUPHM1XXX03250015172030000000000000001040810052116050300052045172530360854048.005802PH5920QRPH PAYMENT DEMOAPP6011Albay Bicol62450012ph.ppmi.qrph05062110000708PTR101700803***88270012ph.ppmi.qrph0107287491063045593",
+                            // ####new costumizable amount###
+                          // text: "00020101021128830015ph.ppmi.p2micro0111RUGUPHM1XXX03250017311040000000000000001040916000883205030005204731153036085802PH5913Test Merchant6012Bicol, Albay62700012ph.ppmi.qrph0213+6392174007100514225439202305250708PTR102670803***88340012ph.ppmi.qrph0114006392567749236304ABEE",
+                            // ####fetch from api####
+                          // text:qr,
+
                           logo: "img/qr-logo.png", 
                           logoWidth: 30,
                           logoHeight: 30, 
